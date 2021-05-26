@@ -3,4 +3,4 @@
 </script>
 
 
-<Products />
+<Products title = 'our products'/>
