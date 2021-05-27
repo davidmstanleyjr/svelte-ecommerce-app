@@ -14,8 +14,8 @@
 //     unsubscribe();
 // })
 
-console.log(products);
-console.log($products);
+// console.log(products);
+// console.log($products);
 </script>
 
 <section class='section'>
