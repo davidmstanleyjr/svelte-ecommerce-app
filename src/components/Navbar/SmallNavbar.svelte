@@ -1,5 +1,6 @@
 <script>
   //  cart button
+  import CartButton from '../Cart/CartButton.svelte';
   //global store
   import {link} from 'svelte-routing';
 </script>
@@ -15,6 +16,6 @@
     <img src="/assets/images/logo.svg" class='logo' alt="razors logo">
     </a>
     <!-- cart button -->
-    <button>cart</button>
+   <CartButton />
    </div> 
 </nav>
