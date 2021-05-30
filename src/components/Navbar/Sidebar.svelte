@@ -7,7 +7,7 @@
 </script>
 
 <div class="sidebar-container" transition:fly={{x:-1000}}>
-    <div class="sidebar" transition: fade={{ delay: 400 }}>
+    <div class="sidebar" transition:fade={{ delay: 400 }}>
         <!-- header -->
         <div class="sidebar-header">
            <button class='btn-close' on:click='{()=>{
