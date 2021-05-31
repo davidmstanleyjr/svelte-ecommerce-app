@@ -3,7 +3,7 @@
    import cart from '../../stores/cart';
    $: total = $cart.reduce((acc, curr)=>{
       return (acc += curr.amount);
-   }, 0)
+   }, 0);
 
 </script>
 
