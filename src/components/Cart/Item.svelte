@@ -30,7 +30,7 @@ import { removeItem, increaseAmount, decreaseAmount } from '../../stores/cart';
         </button>       
         <p class='item-amount'>{amount}</p>
         <button class='cart-btn amount-btn' on:click='{()=>{
-            decreaseAmount(id);
+            decreaseAmount(id, amount);
         }}'>
            <i class="fas fa-chevron-down" />
         </button>

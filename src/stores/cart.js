@@ -41,11 +41,10 @@ export const increaseAmount = (id) => {
 	});
 };
 
-export const decreaseAmount = (id) => {
+export const decreaseAmount = (id, amount) => {
 	cart.update (storeValue => {
-		let item = storeValue.find((item) => item.id === id);
 		let cart;
-		if (item.amount === 1) {
+		if (amount === 1) {
 			cart = remove(id, storeValue);
 		} else {
 			cart = toggleAmount(id, storeValue, 'dec');
