@@ -1,6 +1,7 @@
 <script>
     export let id;
     export let location;
+    import {addToCart} from '../stores/cart';
     //global store
 
 
@@ -37,6 +38,7 @@ $: product = $products.find(item => item.id === parseInt(id));
             <h2>${product.price}</h2>
             <p>{product.description}</p>
             <button class='btn btn-primary btn-block' on:click='{()=> {
+                addToCart(product)
       globalStore.toggleItem('cart', true); 
             }}'>
                add to cart 

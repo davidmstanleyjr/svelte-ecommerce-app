@@ -54,4 +54,19 @@ export const decreaseAmount = (id, amount) => {
 };
 // localStorage
 
+export const addToCart = product => {
+	cart.update(storeValue => {
+		const {id, image, title, price} = product;
+		let item = storeValue.find(item => item.id === id);
+		let cart;
+		if (item) {
+			cart = toggleAmount(id, storeValue, 'inc');
+		}
+		else {
+			let newItem = {id, image, title, price, amount: 1}
+			cart = [...storeValue, newItem]
+		}
+		return cart;
+	})
+} 
 export default cart;
