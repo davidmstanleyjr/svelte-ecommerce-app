@@ -22,10 +22,17 @@
 // handle submit
     async function handleSumbmit () {
         let user;
-        if(isMember) {
+        if (isMember) {
             loginUser();
         } else {
-            registerUser();
+         user =  await registerUser({email, password, username});
+        }
+        console.log(user);
+        if (user) {
+
+        }
+        else {
+
         }
     }
 </script>
