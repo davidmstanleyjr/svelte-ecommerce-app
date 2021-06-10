@@ -2,7 +2,7 @@
     import loginUser from '../strapi/loginUser';
     import registerUser from '../strapi/registerUser';
     import {navigate} from 'svelte-routing';
-
+    import globalStore from '../stores/globalStore';
 
 
     let email = '';
@@ -37,10 +37,13 @@
         
         if (user) {
             navigate('/products');
+            globalStore.toggleItem('alert', true, 'happy shopping!' )
             // add alert
             return;
         } 
         // add alert
+        globalStore.toggleItem('alert', true, 'there was an error! please try again!', true )
+
     }
 </script>
 
