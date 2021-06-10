@@ -8,6 +8,7 @@ function getStorageUser() {
     : { username: null, jwt: null };
 }
 
+// sets within local storage the user key
 export function setStorageUser(user) {
   localStorage.setItem("user", JSON.stringify(user));
 }
