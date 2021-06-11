@@ -12,7 +12,7 @@
 
     //add alert
 
-    $: isEmpty = !email || !password || !username;
+    $: isEmpty = !email || !password || !username || $globalStore.alert;
 
 
     // toggle member
@@ -26,8 +26,10 @@
         }
     }
 // handle submit
-    async function handleSumbmit () {
+    async function handleSubmit () {
         // add alert
+        globalStore.toggleItem('alert', true, 'loading data... please wait!' )
+
         let user;
         if (isMember) {
            user = await loginUser({email, password});
@@ -51,7 +53,7 @@
     <h2 class='section-title'>
         {#if isMember}sign in{:else}register{/if}
     </h2>
-    <form class="login-form" on:submit|preventDefault={handleSumbmit}>
+    <form class="login-form" on:submit|preventDefault={handleSubmit}>
     <!-- single input -->
     <div class="form-control">
         <label for="email">email</label>
