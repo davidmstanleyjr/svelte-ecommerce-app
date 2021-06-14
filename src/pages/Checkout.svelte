@@ -5,6 +5,12 @@
     import { cartTotal } from '../stores/cart';
 
     let name = '';
+// stripe variables 
+let cardElement;
+let cardErrors;
+let card;
+let stripe;
+let elements;
 
     $: isEmpty = !name;
 
@@ -36,6 +42,25 @@ function handleSubmit() {
     <!-- end of single input -->
 
     <!-- stripe stuff -->
+    <div class="stripe-input">
+    <!-- info -->
+        <label for="card-element">Credit or Debit</label>
+        <p class="stripe-info">
+            Test using this credit card: 
+            <span>4242 4242 4242 4242</span>
+            <br>
+            enter any 5 digits for the zip code
+            <br>
+            enter any 3 digits for the CVC
+        </p>
+
+
+
+        <div id="card-element" bind:this={cardElement}>
+        <!-- stripe -->
+        </div>
+        <div id="card-errors" bind:this={cardErrors} role='alert' />
+    </div>
 
     <!-- end of stripe stuff -->
 
