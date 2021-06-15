@@ -18,7 +18,20 @@ let elements;
 onMount(() => {
     if(!$user.jwt) {
         navigate('/');
+        return;
     }
+    stripe = Stripe('pk_test_51J21TSIqwC4uAJxr3n6yu3oGuXfwTdbapUeO1rZJRhSF8BQ302NDGuUO6k7nt8uhAGxYNIeHBtlE2pnx5AxjjmCj00vNPTy32S');
+    elements = stripe.elements();
+    card = elements.create('card');
+    card.mount(cardElement);
+    card.addEventListener('change', function(event) {
+        if (event.error) {
+            cardErrors.textContent = event.error.message;
+        }
+        else { 
+            cardErrors.textContent = '';
+        }
+    })
 });
 
 function handleSubmit() {
