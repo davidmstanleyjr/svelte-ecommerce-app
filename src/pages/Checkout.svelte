@@ -11,6 +11,7 @@ import cart, {
     cartTotal
 } from '../stores/cart';
 import submitOrder from '../strapi/submitOrder';
+import globalStore from '../stores/globalStore';
 
 let name = '';
 // stripe variables
@@ -20,7 +21,7 @@ let card;
 let stripe;
 let elements;
 
-$: isEmpty = !name;
+$: isEmpty = !name || $globalStore.alert;
 
 // doesn't allow user to go to the checkout page by typing in the URL
 onMount(() => {
@@ -47,6 +48,7 @@ onMount(() => {
 });
 
 async function handleSubmit() {
+    globalStore.toggleItem('alert', true, 'submitting order... please wait!')
     let response = await stripe.createToken(card).catch(error => console.log(error));
     const {
         token
@@ -54,7 +56,17 @@ async function handleSubmit() {
     if (token) {
     const { id } = token;
     let order = await submitOrder({name, total:$cartTotal, items:$cart, stripeTokenId:id, userToken:$user.jwt});
-    console.log(order);
+    if (order) {
+        globalStore.toggleItem('alert', true, 'your order is complete!');
+        cart.set([]);
+        localStorage.setItem('cart', JSON.stringify([]));
+        navigate('/');
+        return
+    }
+    else {
+        globalStore.toggleItem('alert', true, 'there was an error with your order. please try again', true )
+    }
+    
         // token id
         // submit order
     } else {
