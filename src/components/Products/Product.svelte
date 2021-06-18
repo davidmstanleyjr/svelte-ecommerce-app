@@ -8,7 +8,7 @@ import { link } from 'svelte-routing';
 <article class='product'>
     <div class="img-container">
         <img src={image} alt={title} />
-        <a href={`/products/${id}`} class = 'btn btn-primary product-link' use:link>details</a>
+        <a href={`/products/${id}`} class='btn btn-primary product-link' use:link>details</a>
     </div>
 
     <div class="product-footer">

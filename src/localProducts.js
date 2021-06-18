@@ -1,8 +1,8 @@
 export default [
   {
     id: 1,
-    title: "razor blade",
-    price: 1.99,
+    title: "Retro Kame House T-Shirt",
+    price: 19.99,
     description:
       "Lorem ipsum dolor amet leggings microdosing man bun, YOLO normcore four loko authentic poke. Man braid wolf cornhole YOLO, cronut succulents chambray fashion axe. Whatever truffaut lomo distillery meditation marfa, shaman quinoa selvage retro la croix bushwick banh mi kitsch. Glossier blog chillwave vinyl vice. Etsy sustainable bespoke art party kitsch hashtag mlkshk cold-pressed kinfolk selfies. Tumblr deep v shabby chic, authentic gochujang pour-over selvage tofu next level street art pitchfork viral knausgaard polaroid. Everyday carry authentic truffaut marfa retro.",
     featured: true,
@@ -25,8 +25,8 @@ export default [
   },
   {
     id: 2,
-    title: "Gillette Razor",
-    price: 9.99,
+    title: "Samurai Champloo T-shirt",
+    price: 19.99,
     description:
       "Lorem ipsum dolor amet leggings microdosing man bun, YOLO normcore four loko authentic poke. Man braid wolf cornhole YOLO, cronut succulents chambray fashion axe. Whatever truffaut lomo distillery meditation marfa, shaman quinoa selvage retro la croix bushwick banh mi kitsch. Glossier blog chillwave vinyl vice. Etsy sustainable bespoke art party kitsch hashtag mlkshk cold-pressed kinfolk selfies. Tumblr deep v shabby chic, authentic gochujang pour-over selvage tofu next level street art pitchfork viral knausgaard polaroid. Everyday carry authentic truffaut marfa retro.",
     featured: true,
@@ -49,8 +49,8 @@ export default [
   },
   {
     id: 3,
-    title: "Barber Razor",
-    price: 7.99,
+    title: "Ryuk Lightweight Hoodie",
+    price: 35.43,
     description:
       "Lorem ipsum dolor amet leggings microdosing man bun, YOLO normcore four loko authentic poke. Man braid wolf cornhole YOLO, cronut succulents chambray fashion axe. Whatever truffaut lomo distillery meditation marfa, shaman quinoa selvage retro la croix bushwick banh mi kitsch. Glossier blog chillwave vinyl vice. Etsy sustainable bespoke art party kitsch hashtag mlkshk cold-pressed kinfolk selfies. Tumblr deep v shabby chic, authentic gochujang pour-over selvage tofu next level street art pitchfork viral knausgaard polaroid. Everyday carry authentic truffaut marfa retro.",
     featured: null,
@@ -73,8 +73,8 @@ export default [
   },
   {
     id: 4,
-    title: "Electric Razor",
-    price: 20.99,
+    title: "Afro Samurai Art Print",
+    price: 21.01,
     description:
       "Lorem ipsum dolor amet leggings microdosing man bun, YOLO normcore four loko authentic poke. Man braid wolf cornhole YOLO, cronut succulents chambray fashion axe. Whatever truffaut lomo distillery meditation marfa, shaman quinoa selvage retro la croix bushwick banh mi kitsch. Glossier blog chillwave vinyl vice. Etsy sustainable bespoke art party kitsch hashtag mlkshk cold-pressed kinfolk selfies. Tumblr deep v shabby chic, authentic gochujang pour-over selvage tofu next level street art pitchfork viral knausgaard polaroid. Everyday carry authentic truffaut marfa retro.",
     featured: null,
@@ -97,8 +97,8 @@ export default [
   },
   {
     id: 5,
-    title: "Vintage Razor",
-    price: 33.99,
+    title: "Kengan Ashura Socks",
+    price: 17.51,
     description:
       "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
     featured: null,
@@ -121,8 +121,8 @@ export default [
   },
   {
     id: 6,
-    title: "Gillette Orange Razor",
-    price: 12.99,
+    title: "Yujiro Hanma Mouth Flat Mask",
+    price: 7.66,
     description:
       "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
     featured: null,
@@ -130,13 +130,13 @@ export default [
     updated_at: "2019-10-28T19:58:34.104Z",
     image: {
       id: 6,
-      name: "product-6.png",
+      name: "product-6.jpg",
       hash: "ab465a7ab2f4464b86b2e9b82c45addb",
       sha256: "HPr1b8is5yGhwQQJd1PUBK_m-mEw3wpCoXP4QyIepLo",
       ext: ".png",
-      mime: "image/png",
+      mime: "image/jpg",
       size: "15.27",
-      url: "/assets/product-images/product-6.png",
+      url: "/assets/product-images/product-6.jpg",
       provider: "local",
       provider_metadata: null,
       created_at: "2019-10-28T19:58:34.119Z",
@@ -145,8 +145,8 @@ export default [
   },
   {
     id: 7,
-    title: "Gillette Blue Razor",
-    price: 17.99,
+    title: "Full Metal Alchemist Sticker",
+    price: 1.25,
     description:
       "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
     featured: true,
@@ -154,13 +154,13 @@ export default [
     updated_at: "2019-10-28T20:09:56.444Z",
     image: {
       id: 7,
-      name: "product-7.png",
+      name: "product-7.jpg",
       hash: "5a120cff57d24ad184b949b9235097b2",
       sha256: "FEvujME4KbZKGz8lDSkND_7QUXud0BO38yIPY5KMRwI",
       ext: ".png",
-      mime: "image/png",
+      mime: "image/jpg",
       size: "18.50",
-      url: "/assets/product-images/product-7.png",
+      url: "/assets/product-images/product-7.jpg",
       provider: "local",
       provider_metadata: null,
       created_at: "2019-10-28T20:09:56.461Z",
@@ -169,8 +169,8 @@ export default [
   },
   {
     id: 8,
-    title: "Old School Razor",
-    price: 40.99,
+    title: "Naruto iPhone Case",
+    price: 21.00,
     description:
       "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
     featured: null,
@@ -178,13 +178,13 @@ export default [
     updated_at: "2019-10-28T20:10:40.850Z",
     image: {
       id: 8,
-      name: "product-8.png",
+      name: "product-8.jpg",
       hash: "a3b34b9b4aab4e23b816a2ce05da01d9",
       sha256: "iFN9i6Z6kXHJ--4e64wSN-td4R-Wb-wHY8OMLvhBQzo",
       ext: ".png",
-      mime: "image/png",
+      mime: "image/jpg",
       size: "19.36",
-      url: "/assets/product-images/product-8.png",
+      url: "/assets/product-images/product-8.jpg",
       provider: "local",
       provider_metadata: null,
       created_at: "2019-10-28T20:10:40.863Z",
@@ -193,8 +193,8 @@ export default [
   },
   {
     id: 9,
-    title: "Panasonic Electric Shaver",
-    price: 24.99,
+    title: "Son Goku Kid iPhone Case",
+    price: 20.83,
     description:
       "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
     featured: true,
@@ -202,13 +202,13 @@ export default [
     updated_at: "2019-10-28T20:26:12.927Z",
     image: {
       id: 9,
-      name: "product-9.png",
+      name: "product-9.jpg",
       hash: "ac98629e1b474d2b89f3ad8e4d3bbcb0",
       sha256: "G9rriv6IvzwvPE101J1aO9iGNjNVZu3CXmthgDCgYmY",
       ext: ".png",
-      mime: "image/png",
+      mime: "image/jpg",
       size: "19.73",
-      url: "/assets/product-images/product-9.png",
+      url: "/assets/product-images/product-9.jpg",
       provider: "local",
       provider_metadata: null,
       created_at: "2019-10-28T20:12:30.387Z",

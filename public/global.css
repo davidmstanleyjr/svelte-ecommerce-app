@@ -10,8 +10,8 @@ Variables
 ======
 */
 :root {
-  --primaryColor: #9e3aa3;
-  --primaryDarkColor: #4e1d51;
+  --primaryColor: black;
+  --primaryDarkColor: black;
   --primaryFont: "Catamaran", sans-serif;
   --slantedFont: "Kaushan Script", cursive;
   --mainWhite: #fff;
@@ -173,7 +173,7 @@ Navbar
 .btn-cart-items {
   display: block;
   position: absolute;
-  background: var(--primaryColor);
+  background: red;
   top: -45%;
   right: -40%;
   padding: 0rem 0.3rem;
@@ -198,20 +198,21 @@ Navbar
 }
 .nav-links a:hover,
 .nav-aside a:hover {
-  color: var(--primaryColor);
+  color: red;
 }
-.nav-logo {
+/* .nav-logo {
   line-height: 0;
 }
 .logo {
   width: 9rem;
+  
 }
 .big-logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 .nav-aside {
   display: flex;
   align-items: center;
@@ -231,7 +232,7 @@ Hero
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     ),
-    url("./assets/images/mainBcg.jpeg") center/cover no-repeat;
+    url("./assets/images/background6.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
