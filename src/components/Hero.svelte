@@ -1,7 +1,7 @@
 <div class="hero">
     <div class="banner">
-        <h1>foam, shave, grow</h1>
-        <p>Emrace your choices- we do</p>
+        <h1>Welcome to Anime Warehouse</h1>
+        <p>You're gonna love it here</p>
         <slot>
 
         </slot>

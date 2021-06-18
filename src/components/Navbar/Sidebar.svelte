@@ -19,7 +19,7 @@
            </button> 
         </div>
         <!-- site logo -->
-        <img src="/assets/images/logo.svg" class='logo sidebar-logo' alt="razors logo">
+        <img src="/assets/images/logo.png" class='logo sidebar-logo' alt="anime-warehouse logo">
         <!-- links -->
         <ul class="sidebar-links">
             {#each links as sideLink}

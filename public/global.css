@@ -1,9 +1,11 @@
+
+
 /* 
 ====== 
 Fonts
 ======
 */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400|Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Nanum+Brush+Script&display=swap');
 /* 
 ====== 
 Variables 
@@ -12,8 +14,8 @@ Variables
 :root {
   --primaryColor: black;
   --primaryDarkColor: black;
-  --primaryFont: "Catamaran", sans-serif;
-  --slantedFont: "Kaushan Script", cursive;
+  --primaryFont: "Kirang Haerang", sans-serif;
+  --slantedFont: "Nanum Brush Script", cursive;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBackground: rgb(250, 245, 243);
@@ -355,7 +357,7 @@ Products
 .product-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 .product-price {
