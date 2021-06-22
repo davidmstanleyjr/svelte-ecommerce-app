@@ -14,8 +14,6 @@ async function setProducts() {
   }
 }
 
-
-
 // flatten products
 function flattenProducts(data) {
   return data.map(item => {
