@@ -1,8 +1,6 @@
 import { writable, derived } from "svelte/store";
 import url from "../strapi/URL";
 import getProducts from "../strapi/getProducts";
-
-
 const store = writable([], () => {
   setProducts();
   return () => {};
@@ -16,15 +14,13 @@ async function setProducts() {
   }
 }
 
-// subscribe
-// set
-// update
+
 
 // flatten products
 function flattenProducts(data) {
   return data.map(item => {
-    // let image = item.image.url;
-    let image = `${url}${item.image.url}`;
+    let image = item.image.url;
+    // let image = `${url}${item.image.url}`;
     return { ...item, image };
   });
 }
