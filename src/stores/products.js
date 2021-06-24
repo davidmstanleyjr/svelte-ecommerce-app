@@ -1,10 +1,8 @@
 import { writable, derived } from "svelte/store";
 import  url from "../strapi/URL";
 import getProducts from "../strapi/getProducts";
-import localProducts from "../localProducts";
 
 
-const store1 = writable(flattenProducts([...localProducts]));
 
 
 const store = writable([], () => {
@@ -31,10 +29,6 @@ function flattenProducts(data) {
 }
 // featured store
 export const featuredStore = derived(store, $featured => {
-  return $featured.filter(item => item.featured === true);
-});
-
-export const featuredStore1 = derived(store1, $featured => {
   return $featured.filter(item => item.featured === true);
 });
 
