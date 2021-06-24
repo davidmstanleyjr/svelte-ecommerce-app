@@ -1,7 +1,6 @@
 import { writable, derived } from "svelte/store";
 import  url from "../strapi/URL";
 import getProducts from "../strapi/getProducts";
-import localProducts from "../localProducts";
 
 
 
@@ -12,7 +11,7 @@ const store = writable([], () => {
 
 
 async function setProducts() {
-  let products = await getProducts(localProducts);
+  let products = await getProducts();
   if (products) {
     products = flattenProducts(products);
     store.set(products);
