@@ -5,14 +5,14 @@ import localProducts from "../localProducts";
 
 
 
-const store = writable(flattenProducts[...localProducts], () => {
+const store = writable([], () => {
   setProducts();
   return () => {};
 });
 
 
 async function setProducts() {
-  let products = await getProducts();
+  let products = await getProducts(localProducts);
   if (products) {
     products = flattenProducts(products);
     store.set(products);
