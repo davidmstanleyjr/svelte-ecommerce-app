@@ -5,7 +5,7 @@ import localProducts from "../localProducts";
 
 
 
-const store = writable([...localProducts], () => {
+const store = writable(flattenProducts[...localProducts], () => {
   setProducts();
   return () => {};
 });
