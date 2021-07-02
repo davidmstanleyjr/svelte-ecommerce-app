@@ -23,6 +23,7 @@ I did this project because I wanted to build a fully functional e-commerce app t
  10. Stripe
  11. Node js
  12. Strapi Cloudinary uploader plugin
+ 13. Netlify
 
 # Issues
 
